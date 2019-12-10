@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 116.0, 276.0, 89.0, 137.0 ],
+					"patching_rect" : [ 83.0, 355.0, 89.0, 137.0 ],
 					"sono" : 1,
 					"sonomonobgcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
@@ -92,7 +92,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 368.0, 45.0, 45.0 ]
+					"patching_rect" : [ 24.0, 447.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -105,16 +105,16 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 87.0, 105.0, 48.0, 136.0 ],
+					"patching_rect" : [ 87.0, 197.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -138,12 +138,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 211.0, 158.0, 90.0, 22.0 ],
-					"text" : "pfft~ fft-formant"
+					"patching_rect" : [ 209.0, 298.0, 90.0, 35.0 ],
+					"text" : "pfft~ fft-formant 1024"
 				}
 
 			}
