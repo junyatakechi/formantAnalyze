@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 485.0, 79.0, 592.0, 655.0 ],
+		"rect" : [ 485.0, 79.0, 595.0, 655.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -62,7 +62,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "History i(0);\r\nHistory result1(0);\r\nHistory result2(0);\r\nHistory flag_out1(0);\r\nHistory flag_out2(0);\r\nData pow(3);\r\nData bin(3);\r\n\r\nif(2 < in2 < 50){\r\n\tpoke(pow, in1, i);\r\n\tpoke(bin, in2, i);\r\n\r\n\tif(i > 2){\r\n\t\tn0 = peek(pow, 0);\r\n\t\tn1 = peek(pow, 1);\r\n\t\tn2 = peek(pow, 2);\r\n\t\tif(n1 > n0 && n1 > n2){\r\n\t\t\tif(flag_out1 == 0){\r\n\t\t\t\tresult1 = peek(bin, 1);\r\n\t\t\t\tflag_out1 = 1;\r\n\t\t\t}else if(flag_out2 == 0){\r\n\t\t\t\tresult2 = peek(bin, 1);\r\n\t\t\t\tflag_out2 = 1;\r\n\t\t\t}\r\n\t\t}\r\n\t\ti = 0;\r\n\t}\r\n\ti += 1;\r\n}\r\n\r\n\r\nif(in2 >= 511){\r\n\tflag_out1 = 0;\r\n\tflag_out2 = 0;\r\n}\r\n\r\nout1 = result1;\r\nout2 = result2;\r\n\r\n",
+					"code" : "History i(0);\r\nHistory result1(0);\r\nHistory result2(0);\r\nHistory flag_out1(0);\r\nHistory flag_out2(0);\r\nHistory n0(0);\r\nHistory n1(0);\r\nHistory n2(0);\r\nHistory bin1(0);\r\n\r\nif(0 <= in2 < 50){\r\n\tif(i == 0){\r\n\t\tn0 = in1;\r\n\t}else if(i == 1){\r\n\t\tn1 = in1;\r\n\t\tbin1 = in2;\r\n\t}else{\r\n\t\tn2 = in1;\r\n\t}\r\n\ti += 1;\r\n\tif(i > 2){\r\n\t\tif(n1 > n0 && n1 > n2){\r\n\t\t\tif(flag_out1 == 0){\r\n\t\t\t\tresult1 = bin1;\r\n\t\t\t\tflag_out1 = 1;\r\n\t\t\t}else if(flag_out2 == 0){\r\n\t\t\t\tresult2 = bin1;\r\n\t\t\t\tflag_out2 = 1;\r\n\t\t\t}\r\n\t\t}\r\n\t\ti = 0;\r\n\t}\r\n\t\r\n}\r\n\r\nif(in2 >= 511){\r\n\tflag_out1 = 0;\r\n\tflag_out2 = 0;\r\n\tbin1 = 0;\r\n\tn0 = 0;\r\n\tn1 = 0;\r\n\tn2 = 0;\r\n\tresult1 = 0;\r\n\tresult2 = 0;\r\n}\r\n\r\n\r\nout1 = result1;\r\nout2 = result2;\r\n\r\n",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 12.0,
