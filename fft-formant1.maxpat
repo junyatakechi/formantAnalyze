@@ -102,7 +102,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 311.0, 114.0, 22.0 ],
+					"patching_rect" : [ 20.0, 348.0, 114.0, 22.0 ],
 					"text" : "fftout~ 1 hanning"
 				}
 
